@@ -1,0 +1,29 @@
+{
+  "name": "typesense-demo-example",
+  "version": "1.0.0",
+  "private": true,
+  "description": "typesense-demo-example",
+  "author": "kaleemullahdev",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typesense:run": "docker-compose up"
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "^2.0.7",
+    "gatsby": "^4.24.1",
+    "gatsby-plugin-google-analytics": "^4.24.0",
+    "gatsby-plugin-image": "^2.24.0",
+    "gatsby-plugin-styled-components": "^5.24.0",
+    "gatsby-source-sanity": "^7.5.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "styled-components": "^5.3.6"
+  }
+}
