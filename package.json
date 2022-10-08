@@ -8,22 +8,29 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "typesense:run": "docker-compose up"
+    "typesense:run": "docker-compose up",
+    "build:typesense": "node typesenseQueries.js"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.0",
+    "@babel/runtime": "^7.19.0",
     "babel-plugin-styled-components": "^2.0.7",
+    "cross-fetch": "^3.1.5",
     "gatsby": "^4.24.1",
     "gatsby-plugin-google-analytics": "^4.24.0",
     "gatsby-plugin-image": "^2.24.0",
     "gatsby-plugin-styled-components": "^5.24.0",
+    "gatsby-plugin-typesense": "^0.3.1",
     "gatsby-source-sanity": "^7.5.1",
+    "graphql": "^16.6.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "styled-components": "^5.3.6"
+    "styled-components": "^5.3.6",
+    "typesense": "^1.4.1"
   }
 }
