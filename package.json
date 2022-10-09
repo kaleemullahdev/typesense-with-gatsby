@@ -30,7 +30,9 @@
     "graphql": "^16.6.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-instantsearch-dom": "^6.36.0",
     "styled-components": "^5.3.6",
-    "typesense": "^1.4.1"
+    "typesense": "^1.4.1",
+    "typesense-instantsearch-adapter": "^2.4.2"
   }
 }

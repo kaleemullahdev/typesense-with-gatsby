@@ -28,6 +28,11 @@ const getAllResorts = () => {
             tags: resortTransferType {
               transferType
             }
+            brandLogo: resortBrandLogo {
+              asset {
+                url
+              }
+            }
             numberOfRooms
           }
         }
@@ -35,13 +40,14 @@ const getAllResorts = () => {
     })
     .then((result) => {
       const allResorts = result?.data?.allResort.map(
-        ({ name, location, tags, numberOfRooms }) => {
+        ({ name, location, tags, numberOfRooms, brandLogo }) => {
           const tags_ = tags.map(({ transferType }) => transferType);
           return {
             name,
             location,
             tags: tags_,
             numberOfRooms,
+            brandLogo: brandLogo?.asset?.url,
           };
         }
       );
@@ -63,7 +69,7 @@ const generateTypesenseIndex = async () => {
     apiKey: "xyz", //fill-in with your own info
     connectionTimeoutSeconds: 60,
   });
-  console.log("allResorts", allResorts);
+  // console.log("allResorts", allResorts);
   try {
     if (allResorts) {
       await typesenseClient

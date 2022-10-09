@@ -37,12 +37,13 @@ module.exports = {
             },
             {
               name: "numberOfRooms",
-              type: "float",
+              type: "int64",
+              facet: true,
             },
-            // {
-            //   name: "description",
-            //   type: "string",
-            // },
+            {
+              name: "brandLogo",
+              type: "auto",
+            },
             {
               name: "tags",
               type: "string[]",
